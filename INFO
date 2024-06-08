@@ -1,0 +1,635 @@
+2024-05-17 01:01:37,993   INFO  Distributed testing: False
+2024-05-17 01:01:37,993   INFO  torch.backends.cudnn.benchmark: False
+2024-05-17 01:01:38,095   INFO  Finish RPN Initialization
+2024-05-17 01:01:38,095   INFO  num_classes: [1, 2]
+2024-05-17 01:01:38,104   INFO  Finish CenterHead Initialization
+2024-05-17 01:01:41,061   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-17 01:06:28,578   INFO  Distributed testing: False
+2024-05-17 01:06:28,578   INFO  torch.backends.cudnn.benchmark: False
+2024-05-17 01:06:28,684   INFO  Finish RPN Initialization
+2024-05-17 01:06:28,684   INFO  num_classes: [1, 2]
+2024-05-17 01:06:28,693   INFO  Finish CenterHead Initialization
+2024-05-17 01:06:30,493   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-21 14:26:51,788   INFO  Distributed testing: False
+2024-05-21 14:26:51,788   INFO  torch.backends.cudnn.benchmark: False
+2024-05-21 14:26:51,886   INFO  Finish RPN Initialization
+2024-05-21 14:26:51,886   INFO  num_classes: [1, 2]
+2024-05-21 14:26:51,895   INFO  Finish CenterHead Initialization
+2024-05-21 14:26:53,390   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-24 16:22:01,772   INFO  Distributed testing: False
+2024-05-24 16:22:01,773   INFO  torch.backends.cudnn.benchmark: False
+2024-05-24 16:22:01,879   INFO  Finish RPN Initialization
+2024-05-24 16:22:01,880   INFO  num_classes: [1, 2]
+2024-05-24 16:22:01,889   INFO  Finish CenterHead Initialization
+2024-05-24 16:22:05,319   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-24 16:23:42,786   INFO  Distributed testing: False
+2024-05-24 16:23:42,786   INFO  torch.backends.cudnn.benchmark: False
+2024-05-24 16:23:42,886   INFO  Finish RPN Initialization
+2024-05-24 16:23:42,886   INFO  num_classes: [1, 2]
+2024-05-24 16:23:42,895   INFO  Finish CenterHead Initialization
+2024-05-24 16:23:44,309   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-24 16:50:11,714   INFO  Distributed testing: False
+2024-05-24 16:50:11,714   INFO  torch.backends.cudnn.benchmark: False
+2024-05-24 16:50:11,877   INFO  Finish RPN Initialization
+2024-05-24 16:50:11,877   INFO  num_classes: [1, 2]
+2024-05-24 16:50:11,886   INFO  Finish CenterHead Initialization
+2024-05-24 16:50:13,349   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-24 16:52:26,241   INFO  Distributed testing: False
+2024-05-24 16:52:26,241   INFO  torch.backends.cudnn.benchmark: False
+2024-05-24 16:52:26,349   INFO  Finish RPN Initialization
+2024-05-24 16:52:26,349   INFO  num_classes: [1, 2]
+2024-05-24 16:52:26,358   INFO  Finish CenterHead Initialization
+2024-05-24 16:52:27,753   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-24 16:53:52,821   INFO  Distributed testing: False
+2024-05-24 16:53:52,821   INFO  torch.backends.cudnn.benchmark: False
+2024-05-24 16:53:52,924   INFO  Finish RPN Initialization
+2024-05-24 16:53:52,924   INFO  num_classes: [1, 2]
+2024-05-24 16:53:52,933   INFO  Finish CenterHead Initialization
+2024-05-24 16:53:54,319   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-24 16:56:24,877   INFO  Distributed testing: False
+2024-05-24 16:56:24,877   INFO  torch.backends.cudnn.benchmark: False
+2024-05-24 16:56:24,976   INFO  Finish RPN Initialization
+2024-05-24 16:56:24,977   INFO  num_classes: [1, 2]
+2024-05-24 16:56:24,986   INFO  Finish CenterHead Initialization
+2024-05-24 16:56:26,345   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-24 16:57:48,592   INFO  Distributed testing: False
+2024-05-24 16:57:48,592   INFO  torch.backends.cudnn.benchmark: False
+2024-05-24 16:57:48,703   INFO  Finish RPN Initialization
+2024-05-24 16:57:48,703   INFO  num_classes: [1, 2]
+2024-05-24 16:57:48,716   INFO  Finish CenterHead Initialization
+2024-05-24 16:57:50,082   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-24 17:01:14,457   INFO  Distributed testing: False
+2024-05-24 17:01:14,457   INFO  torch.backends.cudnn.benchmark: False
+2024-05-24 17:01:14,557   INFO  Finish RPN Initialization
+2024-05-24 17:01:14,557   INFO  num_classes: [1, 2]
+2024-05-24 17:01:14,566   INFO  Finish CenterHead Initialization
+2024-05-24 17:01:15,960   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-24 17:01:43,313   INFO  Distributed testing: False
+2024-05-24 17:01:43,313   INFO  torch.backends.cudnn.benchmark: False
+2024-05-24 17:01:43,430   INFO  Finish RPN Initialization
+2024-05-24 17:01:43,431   INFO  num_classes: [1, 2]
+2024-05-24 17:01:43,440   INFO  Finish CenterHead Initialization
+2024-05-24 17:01:44,818   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-24 17:03:38,195   INFO  Distributed testing: False
+2024-05-24 17:03:38,195   INFO  torch.backends.cudnn.benchmark: False
+2024-05-24 17:03:38,300   INFO  Finish RPN Initialization
+2024-05-24 17:03:38,301   INFO  num_classes: [1, 2]
+2024-05-24 17:03:38,310   INFO  Finish CenterHead Initialization
+2024-05-24 17:03:39,679   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:29:31,853   INFO  Distributed testing: False
+2024-05-29 09:29:31,853   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:29:31,963   INFO  Finish RPN Initialization
+2024-05-29 09:29:31,963   INFO  num_classes: [1, 2]
+2024-05-29 09:29:31,972   INFO  Finish CenterHead Initialization
+2024-05-29 09:29:33,390   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:31:16,416   INFO  Distributed testing: False
+2024-05-29 09:31:16,416   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:31:16,527   INFO  Finish RPN Initialization
+2024-05-29 09:31:16,527   INFO  num_classes: [1, 2]
+2024-05-29 09:31:16,541   INFO  Finish CenterHead Initialization
+2024-05-29 09:31:17,932   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:33:20,726   INFO  Distributed testing: False
+2024-05-29 09:33:20,727   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:33:20,827   INFO  Finish RPN Initialization
+2024-05-29 09:33:20,827   INFO  num_classes: [1, 2]
+2024-05-29 09:33:20,836   INFO  Finish CenterHead Initialization
+2024-05-29 09:33:22,231   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:42:17,234   INFO  Distributed testing: False
+2024-05-29 09:42:17,234   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:42:17,337   INFO  Finish RPN Initialization
+2024-05-29 09:42:17,337   INFO  num_classes: [1, 2]
+2024-05-29 09:42:17,346   INFO  Finish CenterHead Initialization
+2024-05-29 09:42:18,741   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:47:04,512   INFO  Distributed testing: False
+2024-05-29 09:47:04,513   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:47:04,639   INFO  Finish RPN Initialization
+2024-05-29 09:47:04,640   INFO  num_classes: [1, 2]
+2024-05-29 09:47:04,651   INFO  Finish CenterHead Initialization
+2024-05-29 09:47:06,097   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:48:52,634   INFO  Distributed testing: False
+2024-05-29 09:48:52,634   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:48:52,751   INFO  Finish RPN Initialization
+2024-05-29 09:48:52,751   INFO  num_classes: [1, 2]
+2024-05-29 09:48:52,760   INFO  Finish CenterHead Initialization
+2024-05-29 09:48:54,160   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:50:48,405   INFO  Distributed testing: False
+2024-05-29 09:50:48,405   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:50:48,512   INFO  Finish RPN Initialization
+2024-05-29 09:50:48,512   INFO  num_classes: [1, 2]
+2024-05-29 09:50:48,521   INFO  Finish CenterHead Initialization
+2024-05-29 09:50:49,907   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:53:19,771   INFO  Distributed testing: False
+2024-05-29 09:53:19,771   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:53:19,872   INFO  Finish RPN Initialization
+2024-05-29 09:53:19,872   INFO  num_classes: [1, 2]
+2024-05-29 09:53:19,881   INFO  Finish CenterHead Initialization
+2024-05-29 09:53:21,265   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:54:18,028   INFO  Distributed testing: False
+2024-05-29 09:54:18,029   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:54:18,166   INFO  Finish RPN Initialization
+2024-05-29 09:54:18,167   INFO  num_classes: [1, 2]
+2024-05-29 09:54:18,177   INFO  Finish CenterHead Initialization
+2024-05-29 09:54:19,582   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:55:36,032   INFO  Distributed testing: False
+2024-05-29 09:55:36,032   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:55:36,142   INFO  Finish RPN Initialization
+2024-05-29 09:55:36,142   INFO  num_classes: [1, 2]
+2024-05-29 09:55:36,151   INFO  Finish CenterHead Initialization
+2024-05-29 09:55:37,544   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-05-29 09:56:28,739   INFO  Distributed testing: False
+2024-05-29 09:56:28,739   INFO  torch.backends.cudnn.benchmark: False
+2024-05-29 09:56:28,861   INFO  Finish RPN Initialization
+2024-05-29 09:56:28,861   INFO  num_classes: [1, 2]
+2024-05-29 09:56:28,871   INFO  Finish CenterHead Initialization
+2024-05-29 09:56:30,262   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-01 14:38:17,767   INFO  Distributed testing: False
+2024-06-01 14:38:17,767   INFO  torch.backends.cudnn.benchmark: False
+2024-06-01 14:38:17,868   INFO  Finish RPN Initialization
+2024-06-01 14:38:17,868   INFO  num_classes: [1, 2]
+2024-06-01 14:38:17,878   INFO  Finish CenterHead Initialization
+2024-06-01 14:38:19,269   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-01 14:39:32,851   INFO  Distributed testing: False
+2024-06-01 14:39:32,851   INFO  torch.backends.cudnn.benchmark: False
+2024-06-01 14:39:32,956   INFO  Finish RPN Initialization
+2024-06-01 14:39:32,956   INFO  num_classes: [1, 2]
+2024-06-01 14:39:32,965   INFO  Finish CenterHead Initialization
+2024-06-01 14:39:34,350   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-04 14:20:32,756   INFO  Distributed testing: False
+2024-06-04 14:20:32,756   INFO  torch.backends.cudnn.benchmark: False
+2024-06-04 14:20:32,857   INFO  Finish RPN Initialization
+2024-06-04 14:20:32,857   INFO  num_classes: [1, 2]
+2024-06-04 14:20:32,866   INFO  Finish CenterHead Initialization
+2024-06-04 14:20:34,298   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-04 14:23:43,729   INFO  Distributed testing: False
+2024-06-04 14:23:43,730   INFO  torch.backends.cudnn.benchmark: False
+2024-06-04 14:23:43,829   INFO  Finish RPN Initialization
+2024-06-04 14:23:43,829   INFO  num_classes: [1, 2]
+2024-06-04 14:23:43,839   INFO  Finish CenterHead Initialization
+2024-06-04 14:24:23,051   INFO  Distributed testing: False
+2024-06-04 14:24:23,051   INFO  torch.backends.cudnn.benchmark: False
+2024-06-04 14:24:23,172   INFO  Finish RPN Initialization
+2024-06-04 14:24:23,173   INFO  num_classes: [1, 2]
+2024-06-04 14:24:23,182   INFO  Finish CenterHead Initialization
+2024-06-05 19:33:02,275   INFO  Distributed testing: False
+2024-06-05 19:33:02,275   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 19:33:02,376   INFO  Finish RPN Initialization
+2024-06-05 19:33:02,376   INFO  num_classes: [1, 2]
+2024-06-05 19:33:02,385   INFO  Finish CenterHead Initialization
+2024-06-05 19:36:51,027   INFO  Distributed testing: False
+2024-06-05 19:36:51,027   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 19:36:51,137   INFO  Finish RPN Initialization
+2024-06-05 19:36:51,138   INFO  num_classes: [1, 2]
+2024-06-05 19:36:51,146   INFO  Finish CenterHead Initialization
+2024-06-05 19:36:52,523   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 19:43:36,563   INFO  Distributed testing: False
+2024-06-05 19:43:36,563   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 19:43:36,664   INFO  Finish RPN Initialization
+2024-06-05 19:43:36,665   INFO  num_classes: [1, 2]
+2024-06-05 19:43:36,674   INFO  Finish CenterHead Initialization
+2024-06-05 21:06:19,579   INFO  Distributed testing: False
+2024-06-05 21:06:19,579   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:06:19,684   INFO  Finish RPN Initialization
+2024-06-05 21:06:19,684   INFO  num_classes: [1, 2]
+2024-06-05 21:06:19,694   INFO  Finish CenterHead Initialization
+2024-06-05 21:06:21,119   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 21:06:58,324   INFO  Distributed testing: False
+2024-06-05 21:06:58,324   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:06:58,425   INFO  Finish RPN Initialization
+2024-06-05 21:06:58,425   INFO  num_classes: [1, 2]
+2024-06-05 21:06:58,436   INFO  Finish CenterHead Initialization
+2024-06-05 21:08:20,139   INFO  Distributed testing: False
+2024-06-05 21:08:20,139   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:08:20,244   INFO  Finish RPN Initialization
+2024-06-05 21:08:20,244   INFO  num_classes: [1, 2]
+2024-06-05 21:08:20,254   INFO  Finish CenterHead Initialization
+2024-06-05 21:08:21,633   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 21:08:59,245   INFO  Distributed testing: False
+2024-06-05 21:08:59,245   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:08:59,345   INFO  Finish RPN Initialization
+2024-06-05 21:08:59,345   INFO  num_classes: [1, 2]
+2024-06-05 21:08:59,355   INFO  Finish CenterHead Initialization
+2024-06-05 21:09:00,765   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 21:09:30,206   INFO  Distributed testing: False
+2024-06-05 21:09:30,206   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:09:30,313   INFO  Finish RPN Initialization
+2024-06-05 21:09:30,313   INFO  num_classes: [1, 2]
+2024-06-05 21:09:30,323   INFO  Finish CenterHead Initialization
+2024-06-05 21:09:31,729   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 21:10:04,853   INFO  Distributed testing: False
+2024-06-05 21:10:04,853   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:10:04,959   INFO  Finish RPN Initialization
+2024-06-05 21:10:04,960   INFO  num_classes: [1, 2]
+2024-06-05 21:10:04,969   INFO  Finish CenterHead Initialization
+2024-06-05 21:10:06,340   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 21:10:32,841   INFO  Distributed testing: False
+2024-06-05 21:10:32,841   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:10:32,943   INFO  Finish RPN Initialization
+2024-06-05 21:10:32,943   INFO  num_classes: [1, 2]
+2024-06-05 21:10:32,957   INFO  Finish CenterHead Initialization
+2024-06-05 21:10:34,343   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 21:11:01,385   INFO  Distributed testing: False
+2024-06-05 21:11:01,385   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:11:01,488   INFO  Finish RPN Initialization
+2024-06-05 21:11:01,489   INFO  num_classes: [1, 2]
+2024-06-05 21:11:01,499   INFO  Finish CenterHead Initialization
+2024-06-05 21:11:02,891   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 21:19:33,268   INFO  Distributed testing: False
+2024-06-05 21:19:33,268   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:19:33,375   INFO  Finish RPN Initialization
+2024-06-05 21:19:33,376   INFO  num_classes: [1, 2]
+2024-06-05 21:19:33,385   INFO  Finish CenterHead Initialization
+2024-06-05 21:19:34,754   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 21:27:09,591   INFO  Distributed testing: False
+2024-06-05 21:27:09,591   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:27:09,700   INFO  Finish RPN Initialization
+2024-06-05 21:27:09,700   INFO  num_classes: [1, 2]
+2024-06-05 21:27:09,712   INFO  Finish CenterHead Initialization
+2024-06-05 21:27:11,119   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 21:29:16,517   INFO  Distributed testing: False
+2024-06-05 21:29:16,518   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:29:16,625   INFO  Finish RPN Initialization
+2024-06-05 21:29:16,625   INFO  num_classes: [1, 2]
+2024-06-05 21:29:16,635   INFO  Finish CenterHead Initialization
+2024-06-05 21:29:17,987   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 21:59:16,227   INFO  Distributed testing: False
+2024-06-05 21:59:16,227   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 21:59:16,343   INFO  Finish RPN Initialization
+2024-06-05 21:59:16,343   INFO  num_classes: [1, 2]
+2024-06-05 21:59:16,353   INFO  Finish CenterHead Initialization
+2024-06-05 21:59:17,724   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 22:01:01,017   INFO  Distributed testing: False
+2024-06-05 22:01:01,017   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 22:01:01,123   INFO  Finish RPN Initialization
+2024-06-05 22:01:01,124   INFO  num_classes: [1, 2]
+2024-06-05 22:01:01,134   INFO  Finish CenterHead Initialization
+2024-06-05 22:01:02,516   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 22:01:38,840   INFO  Distributed testing: False
+2024-06-05 22:01:38,841   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 22:01:38,958   INFO  Finish RPN Initialization
+2024-06-05 22:01:38,959   INFO  num_classes: [1, 2]
+2024-06-05 22:01:38,969   INFO  Finish CenterHead Initialization
+2024-06-05 22:01:40,342   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 22:25:04,001   INFO  Distributed testing: False
+2024-06-05 22:25:04,001   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 22:25:04,108   INFO  Finish RPN Initialization
+2024-06-05 22:25:04,108   INFO  num_classes: [1, 2]
+2024-06-05 22:25:04,118   INFO  Finish CenterHead Initialization
+2024-06-05 22:25:05,472   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 22:26:44,959   INFO  Distributed testing: False
+2024-06-05 22:26:44,959   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 22:26:45,106   INFO  Finish RPN Initialization
+2024-06-05 22:26:45,107   INFO  num_classes: [1, 2]
+2024-06-05 22:26:45,117   INFO  Finish CenterHead Initialization
+2024-06-05 22:26:46,507   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 22:30:59,361   INFO  Distributed testing: False
+2024-06-05 22:30:59,362   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 22:30:59,469   INFO  Finish RPN Initialization
+2024-06-05 22:30:59,469   INFO  num_classes: [1, 2]
+2024-06-05 22:30:59,478   INFO  Finish CenterHead Initialization
+2024-06-05 22:31:00,833   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 22:39:04,366   INFO  Distributed testing: False
+2024-06-05 22:39:04,366   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 22:39:04,474   INFO  Finish RPN Initialization
+2024-06-05 22:39:04,474   INFO  num_classes: [1, 2]
+2024-06-05 22:39:04,483   INFO  Finish CenterHead Initialization
+2024-06-05 22:39:05,804   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 22:40:55,838   INFO  Distributed testing: False
+2024-06-05 22:40:55,839   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 22:40:55,939   INFO  Finish RPN Initialization
+2024-06-05 22:40:55,939   INFO  num_classes: [1, 2]
+2024-06-05 22:40:55,948   INFO  Finish CenterHead Initialization
+2024-06-05 22:40:57,295   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-05 22:42:24,194   INFO  Distributed testing: False
+2024-06-05 22:42:24,194   INFO  torch.backends.cudnn.benchmark: False
+2024-06-05 22:42:24,300   INFO  Finish RPN Initialization
+2024-06-05 22:42:24,300   INFO  num_classes: [1, 2]
+2024-06-05 22:42:24,309   INFO  Finish CenterHead Initialization
+2024-06-05 22:42:25,688   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 00:51:26,634   INFO  Distributed testing: False
+2024-06-06 00:51:26,634   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 00:51:26,762   INFO  Finish RPN Initialization
+2024-06-06 00:51:26,762   INFO  num_classes: [1, 2]
+2024-06-06 00:51:26,772   INFO  Finish CenterHead Initialization
+2024-06-06 00:51:28,112   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 00:52:17,051   INFO  Distributed testing: False
+2024-06-06 00:52:17,051   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 00:52:17,163   INFO  Finish RPN Initialization
+2024-06-06 00:52:17,163   INFO  num_classes: [1, 2]
+2024-06-06 00:52:17,172   INFO  Finish CenterHead Initialization
+2024-06-06 00:52:18,532   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 00:52:50,335   INFO  Distributed testing: False
+2024-06-06 00:52:50,335   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 00:52:50,437   INFO  Finish RPN Initialization
+2024-06-06 00:52:50,437   INFO  num_classes: [1, 2]
+2024-06-06 00:52:50,447   INFO  Finish CenterHead Initialization
+2024-06-06 00:52:51,819   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 00:54:40,375   INFO  Distributed testing: False
+2024-06-06 00:54:40,376   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 00:54:40,477   INFO  Finish RPN Initialization
+2024-06-06 00:54:40,478   INFO  num_classes: [1, 2]
+2024-06-06 00:54:40,487   INFO  Finish CenterHead Initialization
+2024-06-06 00:54:41,828   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 00:55:14,569   INFO  Distributed testing: False
+2024-06-06 00:55:14,569   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 00:55:14,672   INFO  Finish RPN Initialization
+2024-06-06 00:55:14,672   INFO  num_classes: [1, 2]
+2024-06-06 00:55:14,682   INFO  Finish CenterHead Initialization
+2024-06-06 00:55:16,040   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 00:57:51,934   INFO  Distributed testing: False
+2024-06-06 00:57:51,934   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 00:57:52,037   INFO  Finish RPN Initialization
+2024-06-06 00:57:52,038   INFO  num_classes: [1, 2]
+2024-06-06 00:57:52,047   INFO  Finish CenterHead Initialization
+2024-06-06 00:57:53,436   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 00:58:32,056   INFO  Distributed testing: False
+2024-06-06 00:58:32,057   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 00:58:32,160   INFO  Finish RPN Initialization
+2024-06-06 00:58:32,160   INFO  num_classes: [1, 2]
+2024-06-06 00:58:32,169   INFO  Finish CenterHead Initialization
+2024-06-06 00:58:33,534   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 00:59:44,495   INFO  Distributed testing: False
+2024-06-06 00:59:44,495   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 00:59:44,594   INFO  Finish RPN Initialization
+2024-06-06 00:59:44,594   INFO  num_classes: [1, 2]
+2024-06-06 00:59:44,603   INFO  Finish CenterHead Initialization
+2024-06-06 00:59:45,998   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 01:00:22,453   INFO  Distributed testing: False
+2024-06-06 01:00:22,453   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:00:22,572   INFO  Finish RPN Initialization
+2024-06-06 01:00:22,572   INFO  num_classes: [1, 2]
+2024-06-06 01:00:22,581   INFO  Finish CenterHead Initialization
+2024-06-06 01:00:23,988   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 01:01:09,176   INFO  Distributed testing: False
+2024-06-06 01:01:09,177   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:01:09,277   INFO  Finish RPN Initialization
+2024-06-06 01:01:09,277   INFO  num_classes: [1, 2]
+2024-06-06 01:01:09,286   INFO  Finish CenterHead Initialization
+2024-06-06 01:01:10,672   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 01:02:42,478   INFO  Distributed testing: False
+2024-06-06 01:02:42,478   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:02:42,577   INFO  Finish RPN Initialization
+2024-06-06 01:02:42,577   INFO  num_classes: [1, 2]
+2024-06-06 01:02:42,587   INFO  Finish CenterHead Initialization
+2024-06-06 01:02:43,983   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 01:03:24,391   INFO  Distributed testing: False
+2024-06-06 01:03:24,391   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:03:24,495   INFO  Finish RPN Initialization
+2024-06-06 01:03:24,496   INFO  num_classes: [1, 2]
+2024-06-06 01:03:24,505   INFO  Finish CenterHead Initialization
+2024-06-06 01:03:25,861   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 01:19:43,646   INFO  Distributed testing: False
+2024-06-06 01:19:43,646   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:19:43,748   INFO  Finish RPN Initialization
+2024-06-06 01:19:43,749   INFO  num_classes: [1, 2]
+2024-06-06 01:19:43,758   INFO  Finish CenterHead Initialization
+2024-06-06 01:19:45,199   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 01:30:23,503   INFO  Distributed testing: False
+2024-06-06 01:30:23,503   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:30:23,778   INFO  Finish RPN Initialization
+2024-06-06 01:30:23,778   INFO  num_classes: [1, 2]
+2024-06-06 01:30:23,787   INFO  Finish CenterHead Initialization
+2024-06-06 01:30:34,554   INFO  Distributed testing: False
+2024-06-06 01:30:34,555   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:30:34,658   INFO  Finish RPN Initialization
+2024-06-06 01:30:34,659   INFO  num_classes: [1, 2]
+2024-06-06 01:30:34,671   INFO  Finish CenterHead Initialization
+2024-06-06 01:30:36,073   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 01:35:53,702   INFO  Distributed testing: False
+2024-06-06 01:35:53,702   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:35:53,801   INFO  Finish RPN Initialization
+2024-06-06 01:35:53,801   INFO  num_classes: [1, 2]
+2024-06-06 01:35:53,811   INFO  Finish CenterHead Initialization
+2024-06-06 01:35:55,190   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 01:37:42,469   INFO  Distributed testing: False
+2024-06-06 01:37:42,469   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:37:42,569   INFO  Finish RPN Initialization
+2024-06-06 01:37:42,570   INFO  num_classes: [1, 2]
+2024-06-06 01:37:42,581   INFO  Finish CenterHead Initialization
+2024-06-06 01:37:43,936   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 01:38:04,090   INFO  Distributed testing: False
+2024-06-06 01:38:04,090   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:38:04,209   INFO  Finish RPN Initialization
+2024-06-06 01:38:04,209   INFO  num_classes: [1, 2]
+2024-06-06 01:38:04,218   INFO  Finish CenterHead Initialization
+2024-06-06 01:38:05,576   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 01:38:35,486   INFO  Distributed testing: False
+2024-06-06 01:38:35,486   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 01:38:35,590   INFO  Finish RPN Initialization
+2024-06-06 01:38:35,590   INFO  num_classes: [1, 2]
+2024-06-06 01:38:35,599   INFO  Finish CenterHead Initialization
+2024-06-06 01:38:36,928   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 02:03:26,827   INFO  Distributed testing: False
+2024-06-06 02:03:26,828   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 02:03:26,931   INFO  Finish RPN Initialization
+2024-06-06 02:03:26,931   INFO  num_classes: [1, 2]
+2024-06-06 02:03:26,941   INFO  Finish CenterHead Initialization
+2024-06-06 02:03:28,347   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 02:04:07,052   INFO  Distributed testing: False
+2024-06-06 02:04:07,052   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 02:04:07,172   INFO  Finish RPN Initialization
+2024-06-06 02:04:07,173   INFO  num_classes: [1, 2]
+2024-06-06 02:04:07,182   INFO  Finish CenterHead Initialization
+2024-06-06 02:04:08,571   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 02:04:56,037   INFO  Distributed testing: False
+2024-06-06 02:04:56,037   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 02:04:56,147   INFO  Finish RPN Initialization
+2024-06-06 02:04:56,147   INFO  num_classes: [1, 2]
+2024-06-06 02:04:56,157   INFO  Finish CenterHead Initialization
+2024-06-06 02:04:57,547   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 02:08:08,910   INFO  Distributed testing: False
+2024-06-06 02:08:08,910   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 02:08:09,011   INFO  Finish RPN Initialization
+2024-06-06 02:08:09,011   INFO  num_classes: [1, 2]
+2024-06-06 02:08:09,021   INFO  Finish CenterHead Initialization
+2024-06-06 02:08:10,435   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 16:28:48,819   INFO  Distributed testing: False
+2024-06-06 16:28:48,819   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 16:28:48,926   INFO  Finish RPN Initialization
+2024-06-06 16:28:48,927   INFO  num_classes: [1, 2]
+2024-06-06 16:28:48,936   INFO  Finish CenterHead Initialization
+2024-06-06 16:28:50,295   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 16:29:54,925   INFO  Distributed testing: False
+2024-06-06 16:29:54,925   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 16:29:55,034   INFO  Finish RPN Initialization
+2024-06-06 16:29:55,034   INFO  num_classes: [1, 2]
+2024-06-06 16:29:55,044   INFO  Finish CenterHead Initialization
+2024-06-06 16:29:56,415   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 16:30:45,774   INFO  Distributed testing: False
+2024-06-06 16:30:45,774   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 16:30:45,882   INFO  Finish RPN Initialization
+2024-06-06 16:30:45,882   INFO  num_classes: [1, 2]
+2024-06-06 16:30:45,891   INFO  Finish CenterHead Initialization
+2024-06-06 16:30:47,323   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 16:31:03,835   INFO  Distributed testing: False
+2024-06-06 16:31:03,835   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 16:31:03,938   INFO  Finish RPN Initialization
+2024-06-06 16:31:03,938   INFO  num_classes: [1, 2]
+2024-06-06 16:31:03,947   INFO  Finish CenterHead Initialization
+2024-06-06 16:31:05,354   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 16:33:45,437   INFO  Distributed testing: False
+2024-06-06 16:33:45,437   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 16:33:45,549   INFO  Finish RPN Initialization
+2024-06-06 16:33:45,549   INFO  num_classes: [1, 2]
+2024-06-06 16:33:45,559   INFO  Finish CenterHead Initialization
+2024-06-06 16:33:46,923   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 18:58:08,882   INFO  Distributed testing: False
+2024-06-06 18:58:08,882   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 18:58:09,001   INFO  Finish RPN Initialization
+2024-06-06 18:58:09,002   INFO  num_classes: [1, 2]
+2024-06-06 18:58:09,011   INFO  Finish CenterHead Initialization
+2024-06-06 18:58:10,429   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 18:59:03,157   INFO  Distributed testing: False
+2024-06-06 18:59:03,158   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 18:59:03,261   INFO  Finish RPN Initialization
+2024-06-06 18:59:03,262   INFO  num_classes: [1, 2]
+2024-06-06 18:59:03,271   INFO  Finish CenterHead Initialization
+2024-06-06 18:59:04,644   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 18:59:56,337   INFO  Distributed testing: False
+2024-06-06 18:59:56,337   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 18:59:56,440   INFO  Finish RPN Initialization
+2024-06-06 18:59:56,441   INFO  num_classes: [1, 2]
+2024-06-06 18:59:56,450   INFO  Finish CenterHead Initialization
+2024-06-06 18:59:57,819   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 19:00:26,132   INFO  Distributed testing: False
+2024-06-06 19:00:26,133   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 19:00:26,276   INFO  Finish RPN Initialization
+2024-06-06 19:00:26,276   INFO  num_classes: [1, 2]
+2024-06-06 19:00:26,287   INFO  Finish CenterHead Initialization
+2024-06-06 19:00:27,649   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-06 19:49:59,474   INFO  Distributed testing: False
+2024-06-06 19:49:59,474   INFO  torch.backends.cudnn.benchmark: False
+2024-06-06 19:49:59,575   INFO  Finish RPN Initialization
+2024-06-06 19:49:59,575   INFO  num_classes: [1, 2]
+2024-06-06 19:49:59,584   INFO  Finish CenterHead Initialization
+2024-06-06 19:50:01,603   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 01:54:32,912   INFO  Distributed testing: False
+2024-06-08 01:54:32,912   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 01:54:33,012   INFO  Finish RPN Initialization
+2024-06-08 01:54:33,012   INFO  num_classes: [1, 2]
+2024-06-08 01:54:33,021   INFO  Finish CenterHead Initialization
+2024-06-08 01:54:34,511   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 01:59:06,358   INFO  Distributed testing: False
+2024-06-08 01:59:06,358   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 01:59:06,461   INFO  Finish RPN Initialization
+2024-06-08 01:59:06,461   INFO  num_classes: [1, 2]
+2024-06-08 01:59:06,471   INFO  Finish CenterHead Initialization
+2024-06-08 01:59:08,001   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 01:59:29,173   INFO  Distributed testing: False
+2024-06-08 01:59:29,173   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 01:59:29,281   INFO  Finish RPN Initialization
+2024-06-08 01:59:29,281   INFO  num_classes: [1, 2]
+2024-06-08 01:59:29,290   INFO  Finish CenterHead Initialization
+2024-06-08 01:59:30,790   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 02:03:12,543   INFO  Distributed testing: False
+2024-06-08 02:03:12,544   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 02:03:12,652   INFO  Finish RPN Initialization
+2024-06-08 02:03:12,652   INFO  num_classes: [1, 2]
+2024-06-08 02:03:12,662   INFO  Finish CenterHead Initialization
+2024-06-08 02:03:14,165   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 02:04:59,216   INFO  Distributed testing: False
+2024-06-08 02:04:59,216   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 02:04:59,318   INFO  Finish RPN Initialization
+2024-06-08 02:04:59,318   INFO  num_classes: [1, 2]
+2024-06-08 02:04:59,328   INFO  Finish CenterHead Initialization
+2024-06-08 02:05:00,846   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 02:05:46,168   INFO  Distributed testing: False
+2024-06-08 02:05:46,169   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 02:05:46,308   INFO  Finish RPN Initialization
+2024-06-08 02:05:46,308   INFO  num_classes: [1, 2]
+2024-06-08 02:05:46,318   INFO  Finish CenterHead Initialization
+2024-06-08 02:05:47,861   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 02:06:15,367   INFO  Distributed testing: False
+2024-06-08 02:06:15,367   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 02:06:15,470   INFO  Finish RPN Initialization
+2024-06-08 02:06:15,470   INFO  num_classes: [1, 2]
+2024-06-08 02:06:15,480   INFO  Finish CenterHead Initialization
+2024-06-08 02:06:16,988   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 02:10:38,811   INFO  Distributed testing: False
+2024-06-08 02:10:38,811   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 02:10:38,912   INFO  Finish RPN Initialization
+2024-06-08 02:10:38,912   INFO  num_classes: [1, 2]
+2024-06-08 02:10:38,921   INFO  Finish CenterHead Initialization
+2024-06-08 02:10:40,490   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 15:16:22,593   INFO  Distributed testing: False
+2024-06-08 15:16:22,593   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 15:16:22,700   INFO  Finish RPN Initialization
+2024-06-08 15:16:22,700   INFO  num_classes: [1, 2]
+2024-06-08 15:16:22,710   INFO  Finish CenterHead Initialization
+2024-06-08 15:16:24,226   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 15:17:21,095   INFO  Distributed testing: False
+2024-06-08 15:17:21,096   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 15:17:21,206   INFO  Finish RPN Initialization
+2024-06-08 15:17:21,206   INFO  num_classes: [1, 2]
+2024-06-08 15:17:21,219   INFO  Finish CenterHead Initialization
+2024-06-08 15:17:41,296   INFO  Distributed testing: False
+2024-06-08 15:17:41,296   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 15:17:41,399   INFO  Finish RPN Initialization
+2024-06-08 15:17:41,400   INFO  num_classes: [1, 2]
+2024-06-08 15:17:41,409   INFO  Finish CenterHead Initialization
+2024-06-08 15:17:42,941   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 15:18:18,452   INFO  Distributed testing: False
+2024-06-08 15:18:18,452   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 15:18:18,551   INFO  Finish RPN Initialization
+2024-06-08 15:18:18,551   INFO  num_classes: [1, 2]
+2024-06-08 15:18:18,560   INFO  Finish CenterHead Initialization
+2024-06-08 15:18:20,081   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 15:20:11,090   INFO  Distributed testing: False
+2024-06-08 15:20:11,090   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 15:20:11,205   INFO  Finish RPN Initialization
+2024-06-08 15:20:11,205   INFO  num_classes: [1, 2]
+2024-06-08 15:20:11,214   INFO  Finish CenterHead Initialization
+2024-06-08 15:20:12,732   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 16:46:35,857   INFO  Distributed testing: False
+2024-06-08 16:46:35,857   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 16:46:35,958   INFO  Finish RPN Initialization
+2024-06-08 16:46:35,958   INFO  num_classes: [1, 2]
+2024-06-08 16:46:35,968   INFO  Finish CenterHead Initialization
+2024-06-08 16:46:37,481   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 16:58:51,662   INFO  Distributed testing: False
+2024-06-08 16:58:51,663   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 16:58:51,766   INFO  Finish RPN Initialization
+2024-06-08 16:58:51,766   INFO  num_classes: [1, 2]
+2024-06-08 16:58:51,775   INFO  Finish CenterHead Initialization
+2024-06-08 16:58:53,343   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 17:00:53,651   INFO  Distributed testing: False
+2024-06-08 17:00:53,652   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 17:00:53,790   INFO  Finish RPN Initialization
+2024-06-08 17:00:53,790   INFO  num_classes: [1, 2]
+2024-06-08 17:00:53,799   INFO  Finish CenterHead Initialization
+2024-06-08 17:00:55,315   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 17:01:40,270   INFO  Distributed testing: False
+2024-06-08 17:01:40,270   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 17:01:40,386   INFO  Finish RPN Initialization
+2024-06-08 17:01:40,387   INFO  num_classes: [1, 2]
+2024-06-08 17:01:40,396   INFO  Finish CenterHead Initialization
+2024-06-08 17:01:41,952   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 17:10:42,764   INFO  Distributed testing: False
+2024-06-08 17:10:42,764   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 17:10:42,871   INFO  Finish RPN Initialization
+2024-06-08 17:10:42,872   INFO  num_classes: [1, 2]
+2024-06-08 17:10:42,881   INFO  Finish CenterHead Initialization
+2024-06-08 17:10:44,392   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 17:16:47,858   INFO  Distributed testing: False
+2024-06-08 17:16:47,858   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 17:16:47,970   INFO  Finish RPN Initialization
+2024-06-08 17:16:47,971   INFO  num_classes: [1, 2]
+2024-06-08 17:16:47,980   INFO  Finish CenterHead Initialization
+2024-06-08 17:16:49,542   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 17:19:50,835   INFO  Distributed testing: False
+2024-06-08 17:19:50,835   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 17:19:50,936   INFO  Finish RPN Initialization
+2024-06-08 17:19:50,937   INFO  num_classes: [1, 2]
+2024-06-08 17:19:50,946   INFO  Finish CenterHead Initialization
+2024-06-08 17:19:52,479   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 17:21:24,916   INFO  Distributed testing: False
+2024-06-08 17:21:24,916   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 17:21:25,016   INFO  Finish RPN Initialization
+2024-06-08 17:21:25,016   INFO  num_classes: [1, 2]
+2024-06-08 17:21:25,026   INFO  Finish CenterHead Initialization
+2024-06-08 17:21:26,546   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
+2024-06-08 17:22:46,732   INFO  Distributed testing: False
+2024-06-08 17:22:46,732   INFO  torch.backends.cudnn.benchmark: False
+2024-06-08 17:22:46,832   INFO  Finish RPN Initialization
+2024-06-08 17:22:46,832   INFO  num_classes: [1, 2]
+2024-06-08 17:22:46,841   INFO  Finish CenterHead Initialization
+2024-06-08 17:22:48,405   INFO  work dir: work_dirs/pillarrcnn_fpn_centerhead_waymo
