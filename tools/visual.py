@@ -150,39 +150,52 @@ def keyboard_press_callback(key):
     try:
         print('alphanumeric key {0} pressed'.format(key.char))
         if key.char == 'w':
-            rotation_angles[0] += np.pi / 180
-        if key.char == 's':
             rotation_angles[0] -= np.pi / 180
-        if key.char == 'd':
-            rotation_angles[1] += np.pi / 180
-        if key.char == 'a':
-            rotation_angles[1] -= np.pi / 180
+        if key.char == 's':
+            rotation_angles[0] += np.pi / 180
         if key.char == 'e':
-            rotation_angles[2] += np.pi / 180
+            rotation_angles[1] += np.pi / 180
         if key.char == 'q':
+            rotation_angles[1] -= np.pi / 180
+        if key.char == 'a':
+            rotation_angles[2] += np.pi / 180
+        if key.char == 'd':
             rotation_angles[2] -= np.pi / 180
+        if key.char == 'i':
+            translation_values[0] += 1
+        if key.char == 'k':
+            translation_values[0] -= 1
+        if key.char == 'j':
+            translation_values[1] += 1
+        if key.char == 'l':
+            translation_values[1] -= 1
+        if key.char == 'h':
+            translation_values[2] += 1
+        if key.char == 'n':
+            translation_values[2] -= 1
     except AttributeError:
         print('special key {0} pressed'.format(key))
 
 
-def draw_box_video(vis, gt_boxes, color=(0, 1, 0), ref_labels=None, score=None, rotation_angles=None, rotation_matrix=None):
-    if rotation_angles is None:
-        rotation_angles = [0, 0, 0]
+def draw_box_video(vis, gt_boxes, color=(0, 1, 0), ref_labels=None, score=None, rotation_matrix=None, translation_values=None):
     if rotation_matrix is None:
         rotation_matrix = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+    if translation_values is None:
+        translation_values = [0, 0, 0]
     for i in range(gt_boxes.shape[0]):
-        line_set, box3d = translate_boxes_to_open3d_instance_video(gt_boxes[i], rotation_angles=rotation_angles)
+        line_set, box3d = translate_boxes_to_open3d_instance_video(gt_boxes[i])
         if ref_labels is None:
             line_set.paint_uniform_color(color)
         else:
             line_set.paint_uniform_color(box_colormap[ref_labels[i]])
 
         line_set.rotate(rotation_matrix, center=(0, 0, 0))
+        line_set.translate(translation_values)
         vis.add_geometry(line_set)
     return vis
 
 
-def translate_boxes_to_open3d_instance_video(gt_boxes, rotation_angles=None):
+def translate_boxes_to_open3d_instance_video(gt_boxes):
     """
              4-------- 6
            /|         /|
@@ -192,13 +205,12 @@ def translate_boxes_to_open3d_instance_video(gt_boxes, rotation_angles=None):
           |/         |/
           2 -------- 0
     """
-    if rotation_angles is None:
-        rotation_angles = [0, 0, 0]
+    # print(gt_boxes)
     center = gt_boxes[0:3]
     # lwh = gt_boxes[[3, 4, 5]]
     lwh = gt_boxes[[4, 3, 5]]  # wlh -> lwh
     # axis_angles = np.array([0, 0, gt_boxes[6] + 1e-10])
-    axis_angles = np.array([rotation_angles[1], rotation_angles[0], rotation_angles[2] - gt_boxes[6] - np.pi / 2])
+    axis_angles = np.array([0, 0, 0 - gt_boxes[6] - np.pi / 2])
     rot = o3d.geometry.get_rotation_matrix_from_axis_angle(axis_angles)
     box3d = o3d.geometry.OrientedBoundingBox(center, rot, lwh)
 
@@ -238,6 +250,7 @@ def draw_scenes_video(points, gt_boxes=None, ref_boxes=None, ref_labels=None, re
 
         vis_video.get_render_option().point_size = 1.0
         vis_video.get_render_option().background_color = np.zeros(3)
+        # vis_video.get_view_control().set_zoom(2)
 
         # draw origin
         if draw_origin:
@@ -252,6 +265,7 @@ def draw_scenes_video(points, gt_boxes=None, ref_boxes=None, ref_labels=None, re
     pts.points = o3d.utility.Vector3dVector(points[:, :3])
 
     pts.rotate(rot)
+    pts.translate(translation_values)
     vis_video.add_geometry(pts)
     if point_colors is None:
         pts.colors = o3d.utility.Vector3dVector(np.ones((points.shape[0], 3)))
@@ -262,10 +276,11 @@ def draw_scenes_video(points, gt_boxes=None, ref_boxes=None, ref_labels=None, re
     #     vis_video = draw_box(vis_video, gt_boxes, (0, 0, 1))
     #
     if ref_boxes is not None:
-        vis_video = draw_box_video(vis_video, ref_boxes, (0, 1, 0), ref_labels, ref_scores, rotation_angles=rotation_angles, rotation_matrix=rot)
+        vis_video = draw_box_video(vis_video, ref_boxes, (0, 1, 0), ref_labels, ref_scores, rotation_matrix=rot, translation_values=translation_values)
 
     vis_video.poll_events()
     vis_video.update_renderer()
+    # vis_video.run()
 
 
 if __name__ == '__main__':

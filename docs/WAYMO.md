@@ -56,14 +56,14 @@ Remember to change the WAYMO_DATASET_ROOT to the actual path in your system.
 
 ```bash
 # Separating some of the dataset
-python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/test/annos/ /home/cristian/HDD/LocalDatasets/Waymo_0.1/test/annos/ seq 0 14
-python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/test/lidar/ /home/cristian/HDD/LocalDatasets/Waymo_0.1/test/lidar/ seq 0 14
+python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/test/annos/ /home/cristian/HDD/LocalDatasets/Waymo_0.05_sampled/test/annos/ --percentage 5
+python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/test/lidar/ /home/cristian/HDD/LocalDatasets/Waymo_0.05_sampled/test/lidar/ --percentage 5
 
-python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/val/annos/ /home/cristian/HDD/LocalDatasets/Waymo_0.1/val/annos/ seq 0 19
-python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/val/lidar/ /home/cristian/HDD/LocalDatasets/Waymo_0.1/val/lidar/ seq 0 19
+python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/val/annos/ /home/cristian/HDD/LocalDatasets/Waymo_0.05_sampled/val/annos/ --percentage 5
+python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/val/lidar/ /home/cristian/HDD/LocalDatasets/Waymo_0.05_sampled/val/lidar/ --percentage 5
 
-python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/train/annos/ /home/cristian/HDD/LocalDatasets/Waymo_0.1/train/annos/ seq 0 79
-python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/train/lidar/ /home/cristian/HDD/LocalDatasets/Waymo_0.1/train/lidar/ seq 0 79
+python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/train/annos/ /home/cristian/HDD/LocalDatasets/Waymo_0.05_sampled/train/annos/ --percentage 5
+python smart_copy.py /home/cristian/HDD/LocalDatasets/Waymo/train/lidar/ /home/cristian/HDD/LocalDatasets/Waymo_0.05_sampled/train/lidar/ --percentage 5
 
 # One Sweep Infos 
 python tools/create_data.py waymo_data_prep --root_path=data/Waymo --split train --nsweeps=1 |& tee -a logs/infos_1sweep_train_preprocessing_output.txt
@@ -71,6 +71,9 @@ python tools/create_data.py waymo_data_prep --root_path=data/Waymo --split train
 python tools/create_data.py waymo_data_prep --root_path=data/Waymo --split val --nsweeps=1 |& tee -a logs/infos_1sweep_val_preprocessing_output.txt
 
 python tools/create_data.py waymo_data_prep --root_path=data/Waymo --split test --nsweeps=1 |& tee -a logs/infos_1sweep_test_preprocessing_output.txt
+
+# Tracking Infos
+python tools/create_data.py waymo_data_prep --root_path=data/Waymo --split test --nsweeps=1 |& tee logs/infos_tracking_log.txt
 
 # Two Sweep Infos (for two sweep detection and tracking models)
 python tools/create_data.py waymo_data_prep --root_path=data/Waymo --split train --nsweeps=2 |& tee -a logs/infos_2sweep_train_preprocessing_output.txt
@@ -106,7 +109,7 @@ Use the following command to start a distributed training using 4 GPUs. The mode
 ```bash
 python -m torch.distributed.launch --nproc_per_node=4 ./tools/train.py CONFIG_PATH
 my command:
-python -m torch.distributed.launch --nproc_per_node=1 ./tools/train.py configs/pillarrcnn/pillarrcnn_fpn_centerhead_waymo_0.05.py |& tee -a logs/train_output.txt
+python -m torch.distributed.launch --nproc_per_node=1 ./tools/train.py configs/pillarrcnn/pillarrcnn_fpn_centerhead_waymo.py |& tee -a logs/train_output.txt
 ```
 
 For distributed testing with 4 gpus,
@@ -114,7 +117,7 @@ For distributed testing with 4 gpus,
 ```bash
 python -m torch.distributed.launch --nproc_per_node=4 ./tools/dist_test.py CONFIG_PATH --work_dir work_dirs/CONFIG_NAME --checkpoint work_dirs/CONFIG_NAME/latest.pth 
 my command
-python -m torch.distributed.launch --nproc_per_node=1 ./tools/dist_test.py configs/pillarrcnn/pillarrcnn_fpn_centerhead_waymo_0.05.py --work_dir work_dirs/pillarrcnn_fpn_centerhead_waymo_0.05 --checkpoint work_dirs/pillarrcnn_fpn_centerhead_waymo_0.05/latest.pth 
+python -m torch.distributed.launch --nproc_per_node=1 ./tools/dist_test.py configs/pillarrcnn/pillarrcnn_fpn_centerhead_waymo.py --work_dir work_dirs/pillarrcnn_fpn_centerhead_waymo --checkpoint work_dirs/pillarrcnn_fpn_centerhead_waymo/latest.pth 
 ```
 
 For testing with one gpu and see the inference time,
@@ -122,7 +125,19 @@ For testing with one gpu and see the inference time,
 ```bash
 python ./tools/dist_test.py CONFIG_PATH --work_dir work_dirs/CONFIG_NAME --checkpoint work_dirs/CONFIG_NAME/latest.pth --speed_test 
 my command
-python ./tools/dist_test.py configs/pillarrcnn/pillarrcnn_fpn_centerhead_waymo_0.05.py --work_dir work_dirs/pillarrcnn_fpn_centerhead_waymo_0.05 --checkpoint work_dirs/pillarrcnn_fpn_centerhead_waymo_0.05/latest.pth --speed_test 
+python ./tools/dist_test.py configs/pillarrcnn/pillarrcnn_fpn_centerhead_waymo.py --work_dir work_dirs/pillarrcnn_fpn_centerhead_waymo --checkpoint work_dirs/pillarrcnn_fpn_centerhead_waymo/latest.pth --speed_test |& tee -a logs/dist_test.txt 
+python ./tools/dist_test.py configs/pillarrcnn/pillarrcnn_fpn_centerhead_waymo.py --work_dir work_dirs/pillarrcnn_fpn_centerhead_waymo --checkpoint work_dirs/pillarrcnn_fpn_centerhead_waymo/latest.pth --testset --speed_test |& tee -a logs/dist_test.txt 
+```
+
+For testing and outputting tracking info
+```bash
+python ./tools/dist_test.py configs/pillarrcnn/pillarrcnn_fpn_centerhead_waymo.py --work_dir work_dirs/pillarrcnn_fpn_centerhead_waymo --checkpoint work_dirs/pillarrcnn_fpn_centerhead_waymo/latest.pth --testset --speed_test |& tee -a logs/dist_test.txt
+```
+
+For visualising the predictions
+```bash
+python ./tools/visualise_predictions.py configs/pillarrcnn/pillarrcnn_fpn_centerhead_waymo.py --work_dir work_dirs/pillarrcnn_fpn_centerhead_waymo --checkpoint work_dirs/pillarrcnn_fpn_centerhead_waymo/latest.pth --testset |& tee logs/visualise_predictions_log.txt
+
 ```
 
 This will generate a `my_preds.bin` file in the work_dir. You can create submission to Waymo server using waymo-open-dataset code by following the instructions [here](https://github.com/waymo-research/waymo-open-dataset/blob/master/docs/quick_start.md).  
@@ -135,11 +150,12 @@ python det3d/datasets/waymo/waymo_common.py --info_path data/Waymo/infos_val_01s
 
 I found the instructions at https://github.com/waymo-research/waymo-open-dataset/blob/r1.3/docs/quick_start.md
 Following them, I created a new repo with the waymo_open_dataset for evaluation in the same directory as this repo
-I followed the instructions as indicated, using those 2 commands to build the evaluation script and use it to generate the metrics for this dataset
+I followed the instructions as indicated, using this command to build the evaluation script and use it to generate the metrics for this dataset
 ```bash
 cd ../waymo-od/
 bazel build waymo_open_dataset/metrics/tools/compute_detection_metrics_main
-bazel-bin/waymo_open_dataset/metrics/tools/compute_detection_metrics_main ../Pillar_R-CNN/work_dirs/pillarrcnn_fpn_centerhead_waymo/detection_pred.bin ../Pillar_R-CNN/data/Waymo/gt_preds.bin 
+cd ..
+waymo-od/bazel-bin/waymo_open_dataset/metrics/tools/compute_detection_metrics_main Pillar_R-CNN/work_dirs/pillarrcnn_fpn_centerhead_waymo/detection_pred.bin Pillar_R-CNN/data/Waymo/gt_preds.bin 
 ```
 
 All pretrained models and configurations are in [MODEL ZOO](../configs/waymo/README.md).python det3d/datasets/waymo/waymo_common.py --info_path data/Waymo/infos_val_01sweeps_filter_zero_gt.pkl --result_path data/Waymo/ --gt

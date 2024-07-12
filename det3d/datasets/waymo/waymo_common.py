@@ -1,4 +1,7 @@
+import copy
 import os.path as osp
+import pprint
+
 import numpy as np
 import pickle
 import random
@@ -12,6 +15,8 @@ from tqdm import tqdm
 import argparse
 
 from tqdm import tqdm
+from waymo_open_dataset.protos.metrics_pb2 import Object
+
 try:
     import tensorflow as tf
     # tf.enable_eager_execution()
@@ -58,6 +63,10 @@ def _create_pd_detection(detections, infos, result_path, tracking=False):
 
     objects = metrics_pb2.Objects()
 
+    iteration_count = 3
+
+    tracking_output_list = []
+
     for token, detection in tqdm(detections.items()):
         info = infos[token]
         obj = get_obj(info['anno_path'])
@@ -69,12 +78,14 @@ def _create_pd_detection(detections, infos, result_path, tracking=False):
         # transform back to Waymo coordinate
         # x,y,z,w,l,h,r2
         # x,y,z,l,w,h,r1
-        # r2 = -pi/2 - r1  
+        # r2 = -pi/2 - r1
         box3d[:, -1] = -box3d[:, -1] - np.pi / 2
         box3d = box3d[:, [0, 1, 2, 4, 3, 5, -1]]
 
         if tracking:
             tracking_ids = detection['tracking_ids']
+
+        current_objects = []
 
         for i in range(box3d.shape[0]):
             det  = box3d[i]
@@ -104,6 +115,27 @@ def _create_pd_detection(detections, infos, result_path, tracking=False):
                 o.object.id = uuid_gen.get_uuid(int(tracking_ids[i]))
 
             objects.objects.append(o)
+            current_objects.append(o)
+
+        tracking_output_list.append(convert_data_to_output_dict(current_objects, obj, token))
+
+        if iteration_count > 0:
+            iteration_count -= 1
+        #     print("Token: " + token)
+        #     print("TAG: info")
+        #     pprint.pprint(info)
+        #     print("TAG: obj")
+        #     pprint.pprint(obj)
+        #     print("TAG: box3d")
+        #     pprint.pprint(box3d)
+        #     print("TAG: scores")
+        #     pprint.pprint(scores)
+        #     print("TAG: labels")
+        #     pprint.pprint(labels)
+        #     print("TAG: current_objects")
+        #     pprint.pprint(current_objects)
+        #     print("TEST: object dict")
+        #     pprint.pprint(convert_data_to_output_dict(current_objects, obj, token))
 
     # Write objects to a file.
     if tracking:
@@ -112,9 +144,41 @@ def _create_pd_detection(detections, infos, result_path, tracking=False):
         path = os.path.join(result_path, 'detection_pred.bin')
 
     print("results saved to {}".format(path))
+    # pprint.pprint(objects)
     f = open(path, 'wb')
     f.write(objects.SerializeToString())
     f.close()
+
+    tracking_output_path = os.path.join(result_path, 'detection_result.pkl')
+    with open(tracking_output_path, 'wb') as f:
+        pickle.dump(tracking_output_list, f)
+
+
+def convert_data_to_output_dict(object_list: List[Object], obj, token: str) -> dict:
+    object_dict = {}
+    object_dict['frame_id'] = obj['frame_id']
+    object_dict['seq_id'] = obj['scene_name']   # stabil de la secventa la secventa
+    object_dict['boxes_lidar'] = np.array([])
+    boxes_lidar_list = []
+    names_list = []
+    scores_list = []
+
+    for o in object_list:
+        box = o.object.box
+        boxes_lidar_list.append([
+            box.center_x, box.center_y, box.center_z,
+            box.length, box.width, box.height, box.heading
+        ])
+        names_list.append(TYPE_LIST[o.object.type].capitalize())
+        scores_list.append(o.score)
+
+    object_dict['boxes_lidar'] = np.array(boxes_lidar_list)
+    object_dict['name'] = np.array(names_list)
+    object_dict['score'] = np.array(scores_list)
+    object_dict['frame_name'] = token
+
+    return object_dict
+
 
 def _create_gt_detection(infos, tracking=True):
     """Creates a gt prediction object file for local evaluation."""
@@ -171,6 +235,7 @@ def _create_gt_detection(infos, tracking=True):
             objects.objects.append(o)
         
     # Write objects to a file.
+    # print(objects)
     f = open(os.path.join(args.result_path, 'gt_preds.bin'), 'wb')
     f.write(objects.SerializeToString())
     f.close()
@@ -201,9 +266,12 @@ def _fill_infos(root_path, frames, split='train', nsweeps=1):
         ref_time = 1e-6 * int(ref_obj['frame_name'].split("_")[-1])
 
         ref_pose = np.reshape(ref_obj['veh_to_global'], [4, 4])
+        # print(ref_pose)
+        # pprint.pprint(ref_pose)
         _, ref_from_global = veh_pos_to_transform(ref_pose)
 
         info = {
+            "pose": ref_pose,
             "path": lidar_path,
             "anno_path": ref_path, 
             "token": frame_name,
@@ -215,8 +283,10 @@ def _fill_infos(root_path, frames, split='train', nsweeps=1):
         frame_id = int(frame_name.split("_")[3][:-4]) # remove .pkl
 
         prev_id = frame_id
-        sweeps = [] 
+        sweeps = []
+        # print("There")
         while len(sweeps) < nsweeps - 1:
+            # print("Here")
             if prev_id <= 0:
                 if len(sweeps) == 0:
                     sweep = {
@@ -278,6 +348,7 @@ def _fill_infos(root_path, frames, split='train', nsweeps=1):
             info['gt_boxes'] = gt_boxes[mask_not_zero, :].astype(np.float32)
             info['gt_names'] = gt_names[mask_not_zero].astype(str)
 
+        # pprint.pprint(info)
         infos.append(info)
     return infos
 

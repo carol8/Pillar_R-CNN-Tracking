@@ -1,5 +1,7 @@
 import copy, argparse
 import os, time, pickle
+import pprint
+
 import apex
 import os, sys
 import os.path as osp
@@ -159,7 +161,7 @@ def main():
     time_end = 0
 
     last_seq_name = ""
-
+    obs = False
     for i, data_batch in enumerate(data_loader):
         torch.cuda.synchronize()
         if i == start:
@@ -183,14 +185,20 @@ def main():
         if last_seq_name != seq_name:
             reset_window = True
             last_seq_name = seq_name
+        # while True:
+        pprint.pprint(data_batch)
+
         draw_scenes_video(
             data_batch['points'][0].cpu().numpy(),
             ref_boxes=outputs[0]['box3d_lidar'].cpu().numpy(),
             ref_labels=outputs[0]['label_preds'].cpu().numpy(),
-            reset_window=reset_window,
+            reset_window=False,
             # initial_rotation=[math.pi/4, 45, 0],
             # initial_translation=[0, 0, 0]
         )
+        if obs:
+            time.sleep(30)
+            obs = False
 
         for output in outputs:
             token = output["metadata"]["token"]
