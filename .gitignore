@@ -111,3 +111,5 @@ train.sh
 det3d/version.py
 
 *.pyc
+
+logs/**
