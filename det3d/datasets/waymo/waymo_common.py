@@ -280,7 +280,10 @@ def _fill_infos(root_path, frames, split='train', nsweeps=1):
         }
 
         sequence_id = int(frame_name.split("_")[1])
-        frame_id = int(frame_name.split("_")[3][:-4]) # remove .pkl
+        try:
+            frame_id = int(frame_name.split("_")[3][:-4]) # remove .pkl
+        except ValueError:
+            frame_id = int(frame_name.split("_")[3][:-4].split("-")[0])
 
         prev_id = frame_id
         sweeps = []
@@ -357,7 +360,10 @@ def sort_frame(frames):
 
     for f in frames:
         seq_id = int(f.split("_")[1])
-        frame_id= int(f.split("_")[3][:-4])
+        try:
+            frame_id = int(f.split("_")[3][:-4])  # remove .pkl
+        except ValueError:
+            frame_id = int(f.split("_")[3][:-4].split("-")[0])
 
         idx = seq_id * 1000 + frame_id
         indices.append(idx)
