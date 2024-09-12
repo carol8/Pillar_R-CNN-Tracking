@@ -144,7 +144,7 @@ def _create_pd_detection(detections, infos, result_path, tracking=False):
         path = os.path.join(result_path, 'detection_pred.bin')
 
     print("results saved to {}".format(path))
-    # pprint.pprint(objects)
+    pprint.pprint(objects)
     f = open(path, 'wb')
     f.write(objects.SerializeToString())
     f.close()
