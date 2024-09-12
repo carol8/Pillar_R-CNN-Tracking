@@ -1,0 +1,26 @@
+Comenzile care au mers, in ordine, pe capitole:
+
+- crearea env-ului de conda
+conda create -n pillar_rcnn python=3.8
+conda activate pillar_rcnn
+
+- instalare CUDA si Pytorch
+conda install -c "nvidia/label/cuda-11.4.0" cuda-toolkit -y
+export CUDA_HOME=$CONDA_PREFIX
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+
+
+- setare valori de env pentru C si C++
+export CXX=g++-9
+export CC=gcc-9
+
+- instalare apex
+pip install -r requirements.txt
+pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+
+- instalare pillar_rcnn
+pip install -r requirements.txt
+./setup.sh
+
+- instalare waymo_open_dataset
+pip install waymo-open-dataset-tf-2-4-0
