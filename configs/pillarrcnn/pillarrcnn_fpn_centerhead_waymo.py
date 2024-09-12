@@ -225,6 +225,7 @@ data = dict(
         type=dataset_type,
         root_path=data_root,
         info_path=test_anno,
+        test_mode=True,
         ann_file=test_anno,
         nsweeps=nsweeps,
         class_names=class_names,
