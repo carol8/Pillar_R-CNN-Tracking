@@ -17,6 +17,8 @@ import argparse
 from tqdm import tqdm
 from waymo_open_dataset.protos.metrics_pb2 import Object
 
+import h5py
+
 try:
     import tensorflow as tf
     # tf.enable_eager_execution()
@@ -139,15 +141,14 @@ def _create_pd_detection(detections, infos, result_path, tracking=False):
 
     # Write objects to a file.
     if tracking:
-        path = os.path.join(result_path, 'tracking_pred.bin')
+        path = os.path.join(result_path, 'tracking_pred.h5')
     else:
-        path = os.path.join(result_path, 'detection_pred.bin')
+        path = os.path.join(result_path, 'detection_pred.h5')
 
     print("results saved to {}".format(path))
-    pprint.pprint(objects)
-    f = open(path, 'wb')
-    f.write(objects.SerializeToString())
-    f.close()
+    # pprint.pprint(objects)
+    with open(path, 'wb') as output_file:
+        objects.write(output_file)
 
     tracking_output_path = os.path.join(result_path, 'detection_result.pkl')
     with open(tracking_output_path, 'wb') as f:
@@ -236,9 +237,8 @@ def _create_gt_detection(infos, tracking=True):
         
     # Write objects to a file.
     # print(objects)
-    f = open(os.path.join(args.result_path, 'gt_preds.bin'), 'wb')
-    f.write(objects.SerializeToString())
-    f.close()
+    with open(os.path.join(args.result_path, 'gt_preds.bin'), 'wb') as output_file:
+        objects.write(output_file)
 
 def veh_pos_to_transform(veh_pos):
     "convert vehicle pose to two transformation matrix"
