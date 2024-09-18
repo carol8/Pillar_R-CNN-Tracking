@@ -118,7 +118,7 @@ For distributed testing with 4 gpus,
 python -m torch.distributed.launch --nproc_per_node=4 ./tools/dist_test.py CONFIG_PATH --work_dir work_dirs/CONFIG_NAME --checkpoint work_dirs/CONFIG_NAME/latest.pth 
 my command
 python -m torch.distributed.launch --nproc_per_node=1 ./tools/dist_test.py configs/pillarrcnn/pillarrcnn_fpn_centerhead_waymo.py --work_dir work_dirs/pillarrcnn_fpn_centerhead_waymo --checkpoint work_dirs/pillarrcnn_fpn_centerhead_waymo/latest.pth 
-```
+```w
 
 For testing with one gpu and see the inference time,
 
