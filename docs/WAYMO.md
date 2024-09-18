@@ -153,10 +153,13 @@ Following them, I created a new repo with the waymo_open_dataset for evaluation 
 I followed the instructions as indicated, using this command to build the evaluation script and use it to generate the metrics for this dataset
 ```bash
 cd ../waymo-od/
-bazel build waymo_open_dataset/metrics/tools/compute_detection_metrics_main
+bazel build waymo_open_dataset/metrics/tools/compute_detection_metrics_main 
 cd ..
 waymo-od/bazel-bin/waymo_open_dataset/metrics/tools/compute_detection_metrics_main Pillar_R-CNN/work_dirs/pillarrcnn_fpn_centerhead_waymo/detection_pred.bin Pillar_R-CNN/data/Waymo/gt_preds.bin 
 ```
+I had an error when building bazel, the following build command worked though:
+bazel build waymo_open_dataset/metrics/tools/compute_detection_metrics_main --copt=-Wno-error=array-bounds --copt=-Wno-error=array-parameter --verbose_failures
+
 
 All pretrained models and configurations are in [MODEL ZOO](../configs/waymo/README.md).python det3d/datasets/waymo/waymo_common.py --info_path data/Waymo/infos_val_01sweeps_filter_zero_gt.pkl --result_path data/Waymo/ --gt
 

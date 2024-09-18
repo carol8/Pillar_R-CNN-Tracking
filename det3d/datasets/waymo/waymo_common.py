@@ -144,7 +144,7 @@ def _create_pd_detection(detections, infos, result_path, tracking=False):
         path = os.path.join(result_path, 'detection_pred.bin')
 
     print("results saved to {}".format(path))
-    # pprint.pprint(objects)
+    print(objects.SerializeToString())
     f = open(path, 'wb')
     f.write(objects.SerializeToString())
     f.close()
@@ -235,7 +235,7 @@ def _create_gt_detection(infos, tracking=True):
             objects.objects.append(o)
         
     # Write objects to a file.
-    # print(objects)
+    print(objects.SerializeToString())
     f = open(os.path.join(args.result_path, 'gt_preds.bin'), 'wb')
     f.write(objects.SerializeToString())
     f.close()
